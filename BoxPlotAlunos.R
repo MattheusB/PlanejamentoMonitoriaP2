@@ -1,7 +1,9 @@
 library("ggplot2")
 library("dplyr")
 library("plotly")
-
+  
 dados <- read.csv(file = "/Users/mattheusbrito/git/PlanejamentoMonitoriaP2/teste.csv")
 
-ggplot(data = dados, aes(x = Data, y = Desempenho, colour = "mediumblue"))+ geom_point() + geom_hline(yintercept = 2.5, colour = "blue")
+bp = ggplot( data.aes(x = Aluno, y = factor(Desempenho)))
+
+bp + geom_boxplot()
